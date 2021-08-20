@@ -57,9 +57,9 @@ export function getReticulumFetchUrl(path, absolute = false, host = null, port =
   }
 }
 
-export function getAssetFetchUrl(path, absolute = false, host = null, port = null) {
-  if (host || hasReticulumServer()) {
-    return `https://${host || configs.BASE_ASSETS_PATH}${port ? `:${port}` : ""}${path}`;
+export function getAssetsFetchUrl(path, absolute = false, host = null, port = null) {
+  if (configs.UPLOADS_HOST || host || hasReticulumServer()) {
+    return `https://${configs.UPLOADS_HOST || host}${port ? `:${port}` : ""}${path}`;
   } else if (absolute) {
     resolverLink.href = path;
     return resolverLink.href;
