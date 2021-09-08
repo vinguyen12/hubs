@@ -79,6 +79,7 @@ export function HomePage() {
         </div>
       </Container>
       {configs.feature("show_feature_panels") && (
+        <div className={styles.outtercontainer}>
         <Container className={classNames(styles.features, styles.colLg, styles.centerLg)}>
           <Column padding gap="xl" className={styles.card}>
             <img src={configs.image("landing_rooms_thumb")} />
@@ -118,6 +119,7 @@ export function HomePage() {
             </p>
           </Column>
         </Container>
+        </div>
       )}
       {sortedPublicRooms.length > 0 && (
         <Container className={styles.roomsContainer}>

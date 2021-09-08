@@ -1,6 +1,12 @@
 @use "../styles/theme.scss";
 
 header {
+
+  //Vi's
+  background: rgb(252,45,45);
+  background: linear-gradient(246deg, rgba(252,45,45,0.1153054971988795) 14%, rgba(0,212,255,1) 81%);//
+  //
+
   display: block;
   
 
@@ -25,7 +31,12 @@ header {
 
     li {
       &:first-child {
-        padding-top: 20px;
+        // padding-top: 20px;
+        //Vi's
+        padding-top: 10px;
+        padding-right: 20px;
+        //
+        
         @media(min-width: theme.$breakpoint-lg) {
           img {
             width: 100%;

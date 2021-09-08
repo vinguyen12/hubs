@@ -17,6 +17,14 @@
   }
 }
 
+//Vi's
+:local(.outtercontainer){
+  background-color: rgba(252, 45, 45, 0.288);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+//
+
 :local(.logo-container) {
   display: flex;
   justify-content: center;
@@ -44,6 +52,12 @@
   flex-direction: column;
   align-items: center;
   flex: 1;
+
+  //Vi's
+  padding: 15px;
+  border-radius: 15px;
+  background-color: rgb(128, 128, 128, 0.164);
+  //
 
   @media (min-width: theme.$breakpoint-lg) {
     flex-direction: row;
@@ -154,8 +168,12 @@
 }
  
 :local(.rooms) {
-  background-color: theme.$background2-color;
+  // background-color: theme.$background2-color;
   border-radius: 16px;
+
+  //Vi's
+  background-color: rgba(128, 128, 128, 0.164);
+  //
 }
 
 :local(.row) {
@@ -172,11 +190,25 @@
 }
 
 :local(.home-page) :local(.card) {
-  background-color: theme.$background2-color;
+  // background-color: theme.$background2-color;
   border-radius: 16px;
   font-weight: theme.$font-weight-medium;
   padding-bottom: 32px !important;
   flex: 1;
+
+  //Vi's
+  text-align: justify;
+  text-justify: inter-word;
+  color: rgb(252, 229, 229);
+  background-color: rgba(252, 45, 45, 0.904);
+  //
+}
+
+:local(.home-page) :local(.card):hover{
+    transform: scale(1.25);
+    margin-right: 4%; /* fallback for ancient browsers that don't support calc() */
+    margin-left: 3%;
+    z-index: 2;
 }
 
 :local(.center-lg) {
