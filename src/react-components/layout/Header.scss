@@ -56,6 +56,13 @@ header {
       font-size: theme.$font-size-md;
       color: theme.$text1-color;
     }
+    
+    //Vi's
+    a:hover{
+      font-size: theme.$font-size-md + 3px;
+      color:black;
+    }
+    //
 
     ul {
       display: flex;
@@ -105,7 +112,11 @@ header {
   
   a {
     margin-left: 8px;
-    color: theme.$link-color;
+    // color: theme.$link-color;
+    
+    //Vi's
+    color: #00547e;
+    //
   }
 
   @media(min-width: theme.$breakpoint-lg) {
@@ -116,6 +127,7 @@ header {
     padding-top: 0;
   }
 }
+
 
 :local(.nav-container) {
   position: relative;
